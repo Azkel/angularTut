@@ -1,0 +1,19 @@
+{
+  "name": "angulartutorial",
+  "version": "1.0.0",
+  "description": "Angular Tutorial from Pluralsight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azkel/angularTut.git"
+  },
+  "author": "Michał 'Azkel' Smyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azkel/angularTut/issues"
+  },
+  "homepage": "https://github.com/Azkel/angularTut#readme"
+}
