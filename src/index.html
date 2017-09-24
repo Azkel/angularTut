@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html ng-app="app">
+
 <head>
     <link rel="stylesheet" href="css/style.css">
     <script src="../node_modules/angular/angular.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/github_script.js"></script>
 </head>
 
 <body ng-controller="MainController">
 
+    <h1>GitHub Viewer</h1>
+
     <div>
         {{error}}
     </div>
-    <h1>Hello {{message}}!</h1>
 
-    <div>Name: {{person.firstName}} {{person.lastName}}</div>
-    <div><img ng-src="{{person.imgSrc}}"></div>
+    <div>
+        <form ng-hide="person" id="searchUser" ng-submit="search(username)">
+            <input type="search" required placeholder="Username to find" ng-model="username">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div ng-show="person" ng-include="'user_details.html'"></div>
+
 </body>
 
 </html>
