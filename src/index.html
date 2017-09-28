@@ -4,7 +4,8 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <script src="../node_modules/angular/angular.js"></script>
-    <script src="js/github_script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/github.js"></script>
 </head>
 
 <body ng-controller="MainController">
@@ -16,6 +17,7 @@
     </div>
 
     <div>
+        {{countdown}}
         <form ng-hide="person" id="searchUser" ng-submit="search(username)">
             <input type="search" required placeholder="Username to find" ng-model="username">
             <input type="submit" value="Submit">

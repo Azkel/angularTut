@@ -2,7 +2,6 @@
 
     <div>Name: {{person.name}}</div>
     <div><img ng-src="{{person.avatar_url}}"></div>
-
     Order:
     <select ng-model="repoSortOrder">
                 <option value="+name">Name ASC</option>
@@ -14,7 +13,7 @@
         
             </select>
 
-    <table>
+    <table id="userDetails">
         <thead>
             <th>Name of repository</th>
             <th>Number of stars</th>
